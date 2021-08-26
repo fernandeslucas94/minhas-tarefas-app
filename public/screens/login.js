@@ -1,48 +1,61 @@
 import React from 'react';
-import { View, Text, TextInput, SafeAreaView, Pressable, KeyboardAvoidingView, StatusBar } from 'react-native';
-import Styles from '../../assets/styles/loginStyles';
+
+import { 
+  View, 
+  Text, 
+  KeyboardAvoidingView, 
+  StatusBar 
+} from 'react-native';
+
+import { 
+  PageArea, 
+  Title, 
+  Slogan, 
+  EmailTextInput, 
+  PasswordTextInput,
+  SignInButton,
+  SignUpButton,
+} from '../../assets/styles/loginStyles';
 
 const login = () => {
     return (
-    <SafeAreaView style={Styles.SafeAreaView}>
+    <PageArea>
       <StatusBar 
         barStyle='light-content'
         backgroundColor='#517EEA'
       />
         <KeyboardAvoidingView behavior="position">
         <View style={{marginTop:100, width: 350, height:150, alignItems: 'center', justifyContent: 'center'}}>
-          <Text style={Styles.title}>Minhas Tarefas</Text>
+          <Title>Minhas Tarefas</Title>
         </View>
 
         <View>
-          <Text style={Styles.subtitle}>
-            Gerencie seu tempo e {'\n'} não perca seus compromissos</Text>
+          <Slogan>Gerencie seu tempo e {'\n'} não perca seus compromissos</Slogan>
         </View>
 
-        <TextInput style={Styles.input}
+        <EmailTextInput 
         placeholderTextColor="grey" 
         placeholder="Informe seu email">
+        </EmailTextInput>
 
-        </TextInput>
-
-        <TextInput style={Styles.input}
+        <PasswordTextInput 
         placeholderTextColor="grey" 
         placeholder="Informe sua senha"
-        ></TextInput>
+        ></PasswordTextInput>
 
         <View style={{alignItems: 'center', marginTop: 15,}}>
-        <Pressable style={Styles.signIn}>
-          <Text style={{color: "#FFF", fontSize: 20, textAlign: 'center'}}>Entrar</Text>
-        </Pressable>
+          <SignInButton >
+            <Text style={{color: "#FFF", fontSize: 20, textAlign: 'center'}}>Entrar</Text>
+          </SignInButton>
 
-        <Text style={{color: "#FFF", fontSize: 20, marginTop: 20}}>Ainda não possui cadastro ?</Text>
+          <Text style={{color: "#FFF", fontSize: 20, marginTop: 20}}>Ainda não possui cadastro ?</Text>
 
-        <Pressable style={Styles.signUp}>
-          <Text style={{color: "#FFF", fontSize: 20, textAlign: 'center'}}>Cadastre-se</Text>
-        </Pressable>
+          <SignUpButton >
+            <Text style={{color: "#FFF", fontSize: 20, textAlign: 'center'}}>Cadastre-se</Text>
+          </SignUpButton>
         </View>
       </KeyboardAvoidingView>
-    </SafeAreaView>
+    </PageArea>
     )
 }
 

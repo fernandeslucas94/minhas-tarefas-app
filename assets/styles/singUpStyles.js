@@ -1,56 +1,75 @@
-import { StyleSheet } from "react-native";
+import styled from 'styled-components/native';
 
-export default StyleSheet.create({
-    SafeAreaView:{
-        backgroundColor: "#EEE",
-        flex: 1,
-        alignItems: 'center',
-    },
+export { 
+    PageArea,
+    PageHeader,
+    PageHeaderContent,
+    FormFields,
+    FormContentField,
+    SignUp
+};
 
-    signUpHeader:{
-        backgroundColor: "#517EEA",
-        height: 160,
-        width: "100%",
-        alignItems: 'center',
-        justifyContent: 'center',
-    },
+const PageArea = styled.SafeAreaView`
+    background-color: #EEE;
 
-    headerText:{
-        color: "#FFF",
+    flex: 1;
+    align-items: center;
+`;
 
-        fontSize: 30,
-        fontWeight: '600',
+const PageHeader = styled.View`
+    background-color: #517EEA;
 
-        borderColor: "#FFF",
-        borderWidth: 1.5,
-        borderRadius: 10,
+    height: 160px;
+    width: 100%;
 
-        padding: 15,
-    },
+    align-items: center;
+    justify-content: center;
+`;
 
-    inputText:{
-        marginTop: 35,
-        borderWidth: 1,
-        borderColor: "grey",
-        borderRadius: 15,
-        width: 330,
-        height: 60,
-        paddingLeft: 10,
-    },
+const PageHeaderContent = styled.Text`
+    color: #FFF;
 
-    formFields:{
-        height: 600,
-        alignItems: 'center',
-    },
+    font-size: 30px;
+    font-weight: 600;
 
-    registerButton:{
-        backgroundColor: '#517EEA',
-        height: 60,
-        width: 160,
-        marginTop: 100,
-        borderRadius: 20,
-        alignItems: 'center',
-        justifyContent: 'center',
-        padding: 0,
-    },
-})
+    border-color: #FFF;
+    border-width: 1.5px;
+    border-radius: 10px;
+
+    padding: 15px;
+`;
+
+const FormFields = styled.View`
+    height: 600px;
+    align-items: center;
+
+    margin-top: 40px;
+`;
+
+const FormContentField = styled.TextInput`
+    margin-top: 35px;
+
+    border: 1px solid grey;
+    border-radius: 15px;
+
+    width: 330px;
+    height: 60px;
+
+    padding-left: 10px;
+`;
+
+const SignUp = styled.Pressable`
+    backgroundColor: #517EEA;
+
+    height: 60px;
+    width: 160px;
+
+    margin-top: 100px;
+
+    border-radius: 20px;
+
+    align-items: center;
+    justify-content: center;
+    
+    padding: 0;
+`;

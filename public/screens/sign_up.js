@@ -1,10 +1,23 @@
 import React from 'react';
-import { View, Text, TextInput, SafeAreaView, Pressable, KeyboardAvoidingView, Button, StatusBar } from 'react-native';
-import Styles from '../../assets/styles/singUpStyles';
+
+import { 
+    Text, 
+    KeyboardAvoidingView,
+    StatusBar 
+} from 'react-native';
+
+import { 
+    PageArea,
+    PageHeader,
+    PageHeaderContent,
+    FormFields,
+    FormContentField,
+    SignUp
+} from '../../assets/styles/singUpStyles';
 
 const signUp = () => {
     return (
-        <SafeAreaView style={Styles.SafeAreaView}>
+        <PageArea>
 
             <StatusBar 
             barStyle='light-content'
@@ -13,41 +26,37 @@ const signUp = () => {
             
             <KeyboardAvoidingView behavior="position" 
             style={{width: "100%"}}>
-                <View style={Styles.signUpHeader}>
-                    <Text style={Styles.headerText}>Cadastre-se</Text>
-                </View>
+                <PageHeader>
+                    <PageHeaderContent>Cadastre-se</PageHeaderContent>
+                </PageHeader>
 
-                <View style={Styles.formFields}>
-                    <TextInput
+                <FormFields>
+                    <FormContentField
                         placeholder="Informe seu nome"
                         placeholderTextColor='#777'
-                        style={Styles.inputText}
-                    ></TextInput>
+                    ></FormContentField>
 
-                    <TextInput
+                    <FormContentField
                         placeholder="Informe seu email"
                         placeholderTextColor='#777'
-                        style={Styles.inputText}
-                    ></TextInput>
+                    ></FormContentField>
 
-                    <TextInput
+                    <FormContentField
                         placeholder="Crie uma senha (No mínimo 4 dígitos)"
                         placeholderTextColor='#777'
-                        style={Styles.inputText}
-                    ></TextInput>
+                    ></FormContentField>
 
-                    <TextInput
+                    <FormContentField
                         placeholder="Confirme sua senha"
                         placeholderTextColor='#777'
-                        style={Styles.inputText}
-                    ></TextInput>
+                    ></FormContentField>
 
-                    <Pressable style={Styles.registerButton}>
+                    <SignUp>
                         <Text style={{color: '#FFF', fontSize: 20, fontWeight:'600'}}>Enviar Dados</Text>
-                    </Pressable>
-                </View>
+                    </SignUp>
+                </FormFields>
             </KeyboardAvoidingView>
-        </SafeAreaView>
+        </PageArea>
     )
 }
 
