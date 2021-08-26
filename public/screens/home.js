@@ -1,10 +1,16 @@
 import React from 'react';
-import { View, Text, TextInput, SafeAreaView, Pressable, KeyboardAvoidingView } from 'react-native';
+import { View, Text, TextInput, SafeAreaView, Pressable, KeyboardAvoidingView, StatusBar } from 'react-native';
 import Styles from '../../assets/styles/homeStyles';
 
 const home = () => {
     return (
         <SafeAreaView style={Styles.SafeAreaView}>
+
+            <StatusBar 
+            barStyle='light-content'
+            backgroundColor='#517EEA'
+            />
+
             <View style={Styles.Header}></View>
 
             <View style={Styles.description}>

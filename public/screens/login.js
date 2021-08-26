@@ -1,10 +1,14 @@
 import React from 'react';
-import { View, Text, TextInput, SafeAreaView, Pressable, KeyboardAvoidingView } from 'react-native';
+import { View, Text, TextInput, SafeAreaView, Pressable, KeyboardAvoidingView, StatusBar } from 'react-native';
 import Styles from '../../assets/styles/loginStyles';
 
 const login = () => {
     return (
     <SafeAreaView style={Styles.SafeAreaView}>
+      <StatusBar 
+        barStyle='light-content'
+        backgroundColor='#517EEA'
+      />
         <KeyboardAvoidingView behavior="position">
         <View style={{marginTop:100, width: 350, height:150, alignItems: 'center', justifyContent: 'center'}}>
           <Text style={Styles.title}>Minhas Tarefas</Text>

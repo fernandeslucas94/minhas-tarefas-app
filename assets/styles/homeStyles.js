@@ -1,5 +1,4 @@
 import { StyleSheet } from 'react-native';
-import { memo } from 'react/cjs/react.production.min';
 
 export default StyleSheet.create({
     SafeAreaView:{

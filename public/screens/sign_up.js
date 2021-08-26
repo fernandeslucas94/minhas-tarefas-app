@@ -1,10 +1,16 @@
 import React from 'react';
-import { View, Text, TextInput, SafeAreaView, Pressable, KeyboardAvoidingView, Button } from 'react-native';
+import { View, Text, TextInput, SafeAreaView, Pressable, KeyboardAvoidingView, Button, StatusBar } from 'react-native';
 import Styles from '../../assets/styles/singUpStyles';
 
 const signUp = () => {
     return (
         <SafeAreaView style={Styles.SafeAreaView}>
+
+            <StatusBar 
+            barStyle='light-content'
+            backgroundColor='#517EEA'
+            />
+            
             <KeyboardAvoidingView behavior="position" 
             style={{width: "100%"}}>
                 <View style={Styles.signUpHeader}>

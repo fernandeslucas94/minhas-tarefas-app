@@ -3,7 +3,7 @@ import SignUp from './public/screens/sign_up';
 import Home from './public/screens/home';
 
 const App = () => {
-  return Login();
+  return SignUp();
 }
 
 export default App;
