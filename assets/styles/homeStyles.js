@@ -9,8 +9,9 @@ export default StyleSheet.create({
 
     Header:{
         backgroundColor: '#517EEA',
-        height: 130,
+        height: 110,
         width: '100%',
+        alignItems: 'flex-end',
     },
 
     description:{
