@@ -54,7 +54,7 @@ const WelcomeText = styled.View`
     justify-content: center;
 `;
 
-const NewRegister = styled.Pressable`
+const NewRegister = styled.TouchableOpacity`
     background-color: #09A1BC;
     
     width: 230px;

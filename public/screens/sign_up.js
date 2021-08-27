@@ -3,7 +3,7 @@ import React from 'react';
 import { 
     Text, 
     KeyboardAvoidingView,
-    StatusBar 
+    StatusBar,
 } from 'react-native';
 
 import { 
@@ -12,7 +12,8 @@ import {
     PageHeaderContent,
     FormFields,
     FormContentField,
-    SignUp
+    SignUp,
+    BackToLogin
 } from '../../assets/styles/singUpStyles';
 
 const signUp = () => {
@@ -54,6 +55,10 @@ const signUp = () => {
                     <SignUp>
                         <Text style={{color: '#FFF', fontSize: 20, fontWeight:'600'}}>Enviar Dados</Text>
                     </SignUp>
+
+                    <BackToLogin>
+                        <Text style={{color: '#FFF', fontSize: 20, fontWeight:'600'}}>Voltar</Text>
+                    </BackToLogin>
                 </FormFields>
             </KeyboardAvoidingView>
         </PageArea>

@@ -76,7 +76,7 @@ const PasswordTextInput = styled.TextInput`
 `;
 
 // SignInButton = Botão de Login
-const SignInButton = styled.Pressable` 
+const SignInButton = styled.TouchableOpacity` 
     backgroundColor: #139CB6;
 
     margin-top: 40px;
@@ -92,7 +92,7 @@ const SignInButton = styled.Pressable`
 `;
 
 // SignUpButton = Botão de Cadastro
-const SignUpButton = styled.Pressable`
+const SignUpButton = styled.TouchableOpacity`
     background-color: #139CB6;
 
     margin-top: 40px;

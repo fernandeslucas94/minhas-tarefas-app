@@ -6,7 +6,8 @@ export {
     PageHeaderContent,
     FormFields,
     FormContentField,
-    SignUp
+    SignUp,
+    BackToLogin
 };
 
 const PageArea = styled.SafeAreaView`
@@ -58,13 +59,14 @@ const FormContentField = styled.TextInput`
     padding-left: 10px;
 `;
 
-const SignUp = styled.Pressable`
+const SignUp = styled.TouchableOpacity`
     backgroundColor: #09A1BC;
 
     height: 60px;
     width: 160px;
 
-    margin-top: 100px;
+    margin-top: 40px;
+    margin-bottom: 20px;
 
     border-radius: 20px;
 
@@ -74,4 +76,20 @@ const SignUp = styled.Pressable`
     padding: 0;
 
     elevation: 7;
+`;
+
+const BackToLogin = styled.TouchableOpacity`
+    margin-top: 30px;
+    
+    background-color: #09A1BC;
+
+    height: 60px;
+    width: 160px;
+
+    align-items: center;
+    justify-content: center;
+
+    elevation: 7;
+
+    border-radius: 20px;
 `;
