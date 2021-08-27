@@ -14,7 +14,7 @@ import {
     NewRegister,
     WelcomeTextInnerContent,
     NewRegisterTitle,
-    Toogle
+    SideMenuAccess
 } from '../../assets/styles/homeStyles';
 
 const home = () => {
@@ -23,15 +23,11 @@ const home = () => {
 
             <StatusBar 
             barStyle='light-content'
-            backgroundColor='#517EEA'
+            backgroundColor='#09A1BC'
             />
 
             <UpContainer>
-                <Toogle>
-                    <View><Text style={{backgroundColor: 'black', width: 40, height: 1.5, marginBottom: 10, backgroundColor: 'white'}}>.</Text></View>
-                    <View><Text style={{backgroundColor: 'black', width: 40, height: 1.5, marginBottom: 10, backgroundColor: 'white'}}>.</Text></View>
-                    <View><Text style={{backgroundColor: 'black', width: 40, height: 1.5, marginBottom: 10, backgroundColor: 'white'}}>.</Text></View>
-                </Toogle>
+                <SideMenuAccess><Text style={{color: '#FFF', textTransform: 'uppercase', fontSize: 18}}>Menu</Text></SideMenuAccess>
             </UpContainer>
 
             <WelcomeText>

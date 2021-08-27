@@ -7,7 +7,7 @@ export {
     NewRegister,
     WelcomeTextInnerContent,
     NewRegisterTitle,
-    Toogle
+    SideMenuAccess
 };
 
 const PageArea = styled.SafeAreaView`
@@ -19,7 +19,7 @@ const PageArea = styled.SafeAreaView`
 `;
 
 const UpContainer = styled.View`
-    background-color: #517EEA;
+    background-color: #09A1BC;
 
     height: 120px;
     width: 100%;
@@ -28,20 +28,17 @@ const UpContainer = styled.View`
     
 `;
 
-const Toogle = styled.View`
-    background-color: #517EEA;
-
-    height: 60px;
-    width: 60px;
-
-    margin-left: 20px;
-
-    border-radius: 15px;
+const SideMenuAccess = styled.View`
+    align-items: center;
+    justify-content; center;
+    margin-left: 30px;
 
     border: 1px solid white;
 
-    justify-content: center;
-    align-items: center;
+    width: 90px;
+    padding: 12px;
+
+    border-radius: 10px;
 `;
 
 const WelcomeText = styled.View`
@@ -58,7 +55,7 @@ const WelcomeText = styled.View`
 `;
 
 const NewRegister = styled.Pressable`
-    background-color: #517EEA;
+    background-color: #09A1BC;
     
     width: 230px;
     height: 55px;

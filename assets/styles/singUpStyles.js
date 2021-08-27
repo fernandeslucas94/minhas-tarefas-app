@@ -10,14 +10,14 @@ export {
 };
 
 const PageArea = styled.SafeAreaView`
-    background-color: #EEE;
+    background-color: #FFF;
 
     flex: 1;
     align-items: center;
 `;
 
 const PageHeader = styled.View`
-    background-color: #517EEA;
+    background-color: #09A1BC;
 
     height: 160px;
     width: 100%;
@@ -59,7 +59,7 @@ const FormContentField = styled.TextInput`
 `;
 
 const SignUp = styled.Pressable`
-    backgroundColor: #517EEA;
+    backgroundColor: #09A1BC;
 
     height: 60px;
     width: 160px;
@@ -72,4 +72,6 @@ const SignUp = styled.Pressable`
     justify-content: center;
     
     padding: 0;
+
+    elevation: 7;
 `;

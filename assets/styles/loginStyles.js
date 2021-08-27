@@ -11,7 +11,7 @@ export {
 };
 
 const PageArea = styled.SafeAreaView`
-    background-color: #517EEA;
+    background-color: #09A1BC;
 
     align-items: center;
     flex: 1;
@@ -37,7 +37,7 @@ const Title = styled.Text`
 
 const Slogan = styled.Text`
     color: #FFF;
-    font-size: 20px; 
+    font-size: 22px; 
 
     margin-bottom: 26px;
 
@@ -77,27 +77,31 @@ const PasswordTextInput = styled.TextInput`
 
 // SignInButton = Botão de Login
 const SignInButton = styled.Pressable` 
-    backgroundColor: #3B6FEA;
+    backgroundColor: #139CB6;
 
     margin-top: 40px;
     padding: 10px;
 
     width: 100px;
 
-    border-width: 1px;
+    border-width: 0.5px;
     border-radius: 15px;
-    border-color: #3B6FEA;
+    border-color: #04768A;
+
+    elevation: 7;
 `;
 
 // SignUpButton = Botão de Cadastro
 const SignUpButton = styled.Pressable`
-    background-color: #3B6FEA;
+    background-color: #139CB6;
 
     margin-top: 40px;
     padding: 10px;
     width: 200px;
 
-    border-width: 1px;
+    border-width: 0.5px;
     border-radius: 15px;
-    border-color: #3B6FEA;
+    border-color: #048DA5;
+
+    elevation: 7;
 `;

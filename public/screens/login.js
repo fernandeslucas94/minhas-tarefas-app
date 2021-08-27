@@ -22,7 +22,7 @@ const login = () => {
     <PageArea>
       <StatusBar 
         barStyle='light-content'
-        backgroundColor='#517EEA'
+        backgroundColor='#09A1BC' //#517EEA
       />
         <KeyboardAvoidingView behavior="position">
         <View style={{marginTop:100, width: 350, height:150, alignItems: 'center', justifyContent: 'center'}}>
@@ -30,7 +30,7 @@ const login = () => {
         </View>
 
         <View>
-          <Slogan>Gerencie seu tempo e {'\n'} não perca seus compromissos</Slogan>
+          <Slogan>Gerencie seu tempo {'\n'} e não perca seus prazos</Slogan>
         </View>
 
         <EmailTextInput 
@@ -54,6 +54,7 @@ const login = () => {
             <Text style={{color: "#FFF", fontSize: 20, textAlign: 'center'}}>Cadastre-se</Text>
           </SignUpButton>
         </View>
+
       </KeyboardAvoidingView>
     </PageArea>
     )

@@ -21,7 +21,7 @@ const signUp = () => {
 
             <StatusBar 
             barStyle='light-content'
-            backgroundColor='#517EEA'
+            backgroundColor='#09A1BC'
             />
             
             <KeyboardAvoidingView behavior="position" 
