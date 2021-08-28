@@ -4,8 +4,7 @@ import {
   View, 
   Text, 
   KeyboardAvoidingView, 
-  StatusBar, 
-  TouchableOpacity
+  StatusBar,
 } from 'react-native';
 
 import { 
@@ -31,10 +30,8 @@ const userPassword = () => {
 }
 
 const usr_login = () => {
-  if(userEmail === !true && userPassword === !true) {
+  if(userEmail === true && userPassword === true) {
     alert('Realizando Login')
-  } else {
-    alert('Login não foi realizado')
   }
 }
 
@@ -71,7 +68,7 @@ const login = () => {
 
           <Text style={{color: "#FFF", fontSize: 20, marginTop: 20}}>Ainda não possui cadastro ?</Text>
 
-          <SignUpButton onPress={() => user_SignUp()}>
+          <SignUpButton>
             <Text style={{color: "#FFF", fontSize: 20, textAlign: 'center'}}>Cadastre-se</Text>
           </SignUpButton>
         </View>
