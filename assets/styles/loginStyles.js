@@ -84,9 +84,9 @@ const SignInButton = styled.TouchableOpacity`
 
     width: 100px;
 
-    border-width: 0.5px;
+    border-width: 0.7px;
     border-radius: 15px;
-    border-color: #04768A;
+    border-color: darkgrey;
 
     elevation: 7;
 `;
@@ -99,9 +99,9 @@ const SignUpButton = styled.TouchableOpacity`
     padding: 10px;
     width: 200px;
 
-    border-width: 0.5px;
+    border-width: 0.7px;
     border-radius: 15px;
-    border-color: #048DA5;
+    border-color: darkgrey;
 
     elevation: 7;
 `;
