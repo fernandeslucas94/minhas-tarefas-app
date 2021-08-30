@@ -63,13 +63,13 @@ const login = () => {
 
         <View style={{alignItems: 'center', marginTop: 5,}}>
           <SignInButton onPress={() => usr_login()}>
-            <Text style={{color: "#FFF", fontSize: 20, textAlign: 'center'}}>Entrar</Text>
+            <Text style={{color: "#FFF", fontSize: 16, textAlign: 'center', fontFamily: 'OpenSans-Regular'}}>Entrar</Text>
           </SignInButton>
 
-          <Text style={{color: "#FFF", fontSize: 20, marginTop: 20}}>Ainda não possui cadastro ?</Text>
+          <Text style={{color: "#FFF", fontSize: 20, marginTop: 30, fontFamily: 'OpenSans-Regular'}}>Ainda não possui cadastro ?</Text>
 
           <SignUpButton>
-            <Text style={{color: "#FFF", fontSize: 20, textAlign: 'center'}}>Cadastre-se</Text>
+            <Text style={{color: "#FFF", fontSize: 16, textAlign: 'center', fontFamily: 'OpenSans-Regular'}}>Cadastre-se</Text>
           </SignUpButton>
         </View>
 

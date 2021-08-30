@@ -57,8 +57,8 @@ const WelcomeText = styled.View`
 const NewRegister = styled.TouchableOpacity`
     background-color: #09A1BC;
     
-    width: 230px;
-    height: 55px;
+    width: 240px;
+    height: 56px;
 
     border-radius: 20px;
 

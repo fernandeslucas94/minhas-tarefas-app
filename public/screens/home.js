@@ -27,17 +27,17 @@ const home = () => {
             />
 
             <UpContainer>
-                <SideMenuAccess><Text style={{color: '#FFF', textTransform: 'uppercase', fontSize: 18}}>Menu</Text></SideMenuAccess>
+                <SideMenuAccess><Text style={{color: '#FFF', textTransform: 'uppercase', fontSize: 18, fontFamily: 'OpenSans-Regular'}}>Menu</Text></SideMenuAccess>
             </UpContainer>
 
             <WelcomeText>
-                <WelcomeTextInnerContent>
+                <WelcomeTextInnerContent style={{fontFamily: 'OpenSans-Regular', fontSize: 15}}>
                     Cá entre nós, nós sabemos que tudo o que é importante, não podemos esquecer. Certo ? {'\n'} {'\n'} E pensando nisto, estamos aqui para te ajudar a guardar as datas mais importantes para você, para que você não precise se preocupar com o risco de esquecer. {'\n'} {'\n'} Registre tudo o que for necessário, e deixe conosco o encargo de guardar e te lembrar quando o momento estiver para chegar.
                 </WelcomeTextInnerContent>
             </WelcomeText>
 
             <NewRegister>
-                <NewRegisterTitle>Adicionar Novo Registro</NewRegisterTitle>
+                <NewRegisterTitle style={{fontFamily: 'OpenSans-Bold'}}>Adicionar Novo Registro</NewRegisterTitle>
             </NewRegister>
         </PageArea>
     )

@@ -53,11 +53,11 @@ const signUp = () => {
                     ></FormContentField>
 
                     <SignUp>
-                        <Text style={{color: '#FFF', fontSize: 17, fontWeight:'400'}}>Enviar Dados</Text>
+                        <Text style={{color: '#FFF', fontSize: 17, fontWeight:'400', fontFamily: 'OpenSans-Regular'}}>Enviar Dados</Text>
                     </SignUp>
 
                     <BackToLogin>
-                        <Text style={{color: '#FFF', fontSize: 17, fontWeight:'400'}}>Voltar</Text>
+                        <Text style={{color: '#FFF', fontSize: 17, fontWeight:'400', fontFamily: 'OpenSans-Regular'}}>Voltar</Text>
                     </BackToLogin>
                 </FormFields>
             </KeyboardAvoidingView>

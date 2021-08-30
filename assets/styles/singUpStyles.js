@@ -20,7 +20,7 @@ const PageArea = styled.SafeAreaView`
 const PageHeader = styled.View`
     background-color: #09A1BC;
 
-    height: 90px;
+    height: 120px;
     width: 100%;
 
     align-items: center;
@@ -32,6 +32,7 @@ const PageHeaderContent = styled.Text`
 
     font-size: 28px;
     font-weight: 400;
+    font-family: 'OpenSans-Regular';
 
     margin-bottom: 15px;
 
@@ -39,6 +40,7 @@ const PageHeaderContent = styled.Text`
     border-radius: 10px;
 
     padding: 10px;
+    
 `;
 
 const FormFields = styled.View`
@@ -59,13 +61,15 @@ const FormContentField = styled.TextInput`
     height: 60px;
 
     padding-left: 10px;
+
+    font-family: 'OpenSans-Regular';
 `;
 
 const SignUp = styled.TouchableOpacity`
     backgroundColor: #09A1BC;
 
     height: 50px;
-    width: 140px;
+    width: 150px;
 
     margin-top: 60px;
     margin-bottom: 20px;

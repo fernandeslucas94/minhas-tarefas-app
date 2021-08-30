@@ -15,6 +15,8 @@ const PageArea = styled.SafeAreaView`
 
     align-items: center;
     flex: 1;
+
+    font-family: OpenSans;
 `;
 
 const Title = styled.Text`
@@ -26,23 +28,25 @@ const Title = styled.Text`
 
     text-align: center; 
 
-    font-weight: 400;
-
-    border-width: 2px;
+    border-width: 1.3px;
     border-color: #FFF;
     border-radius: 16px;
     
     padding: 20px;
+
+    font-family: 'OpenSans-Regular';
 `;
 
 const Slogan = styled.Text`
     color: #FFF;
-    font-size: 22px; 
+    font-size: 20px; 
 
     margin-bottom: 26px;
 
     font-weight: 400; 
     text-align: center;
+    
+    font-family: 'OpenSans-Regular';
 `;
 
 const EmailTextInput = styled.TextInput`
@@ -53,11 +57,11 @@ const EmailTextInput = styled.TextInput`
 
     margin-top: 50px;
 
-    border-radius: 30px;
-    border-width: 1px;
-    border-color: #517EEA;
+    border-radius: 10px;
 
     padding-left: 20px;
+
+    font-family: 'OpenSans-Regular';
 `;
 
 const PasswordTextInput = styled.TextInput`
@@ -68,11 +72,11 @@ const PasswordTextInput = styled.TextInput`
 
     margin-top: 50px;
 
-    border-radius: 30px;
-    border-width: 1px;
-    border-color: #517EEA;
+    border-radius: 10px;
 
     padding-left: 20px;
+
+    font-family: 'OpenSans-Regular';
 `;
 
 // SignInButton = Botão de Login
@@ -83,11 +87,9 @@ const SignInButton = styled.TouchableOpacity`
     padding: 10px;
 
     width: 100px;
-
-    border-width: 0.7px;
+    
     border-radius: 15px;
-    border-color: darkgrey;
-
+    
     elevation: 7;
 `;
 
@@ -97,11 +99,9 @@ const SignUpButton = styled.TouchableOpacity`
 
     margin-top: 40px;
     padding: 10px;
-    width: 200px;
+    width: 160px;
 
-    border-width: 0.7px;
     border-radius: 15px;
-    border-color: darkgrey;
 
     elevation: 7;
 `;
